@@ -48,7 +48,8 @@ class AggregationApp(ttk.Frame):
     # ------------------------------------------------------------------
     def _create_widgets(self):
         self.input_path = tk.StringVar()
-
+        self.status_text = tk.StringVar()
+        
         # Output folder
         self.lbl_input = ttk.Label(self, text="Input folder:")
         self.ent_input = ttk.Entry(self, textvariable=self.input_path)
