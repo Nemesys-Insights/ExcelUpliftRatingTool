@@ -87,8 +87,6 @@ def output_from_template(assignments, output_folder):
         columns = [
             'UID',
             'Architecture ID',
-            'Batch ID', 
-            'Jailbroken Prompt',
             'Reason 1', 
             'Reason 2', 
             'Reason 3', 
