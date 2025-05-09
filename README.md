@@ -1,1 +1,46 @@
-# ExcelUpliftRatingTool
+# Uplift Evaluation Workbook Creator
+
+
+## Requirements
+- Windows
+- Internet connection (required for first time setup).
+- Python 3.13+
+- Permissions to run scripts (for quick start option)
+- A BBG benchmark dataset, complete with responses from the model to be benchmarked.
+- Known number of evaluators to evaluate the responses
+
+
+ 
+# Installation and Use
+
+## Initial Setup
+The followings steps only have to be completed the first time the program is installed. 
+
+1. Open a command prompt instance inside the project directory where this readme file is located.
+    - Open the project directory in the File Explorer. Then type "cmd" in the address bar and a command prompt window will open in the correct location.
+2. Type or paste `python -m venv venv` into the command prompt window and then hit the enter key. This will create a python virtual environment in the project directory.
+3. Type or paste `.\venv\Scripts\activate` into the command prompt window, and then hit the enter key. This will activate the virtual environment you just created.
+4. Type or paste `pip install -r requirements.txt` into the command prompt window, and then hit the enter key. This will install the python modules required for the project.
+
+
+## Use
+1. Open a command prompt instance inside the project directory where this readme file is located. 
+2. Type or paste `python gui.py` into the command prompt window, and then hit the enter key. This will open the user interface.
+
+For instructions on using the interface, see the **Using the Interface** section below. 
+
+
+## Using the Interface
+1. For the Input Dataset, use the file browser to select the completed BBG benchmark dataset that you wish to distribute for evaluation.
+2. Use the file browser to select your desired output folder. Ideally, this folder should be empty.  
+3. Input the number of evaluators that you plan to engage.
+4. Specify the number of evaluations desired per prompt-response pair in the dataset.  This value should be predetermined based on project requirements, but the minimum recommended value is 3. 
+5. Click Run.
+6. Wait a few moments while the workbooks generate.
+
+In addition to the workbooks, the program generates an assignment mapping.xlsx file. This file has a tab labelled Assignments, which
+details which reviewers have been assigned to each prompt-response pair in the benchmark dataset. It also has a tab labelled Summary, which indicates the number of assigned prompt-response pairs per reviewer.
+
+
+## Modifying the Template
+All workbooks are generated based on the eval_template.xlsx file in the template folder. Changes to this file will apply to any newly created workbooks. While formatting changes are encouraged, changes to the structure of the template are not compatible with the workbook generation program.
