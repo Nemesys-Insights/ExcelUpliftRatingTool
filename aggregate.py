@@ -51,7 +51,7 @@ class AggregationApp(ttk.Frame):
 
         # Output folder
         self.lbl_input = ttk.Label(self, text="Input folder:")
-        self.ent_input = ttk.Entry(self, textvariable=self.output_path)
+        self.ent_input = ttk.Entry(self, textvariable=self.input_path)
         self.btn_input = ttk.Button(self, text="Browse…", command=self._browse_input)
 
         # Status + Run
