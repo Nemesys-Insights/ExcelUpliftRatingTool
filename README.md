@@ -16,7 +16,7 @@
 The followings steps only have to be completed the first time the program is installed. 
 
 1. Open a command prompt instance inside the project directory where this readme file is located.
-    - Open the project directory in the File Explorer. Then type "cmd" in the address bar and a command prompt window will open in the correct location.
+    - Navigate to the project directory in the File Explorer. Then type "cmd" in the address bar and a command prompt window will open in the correct location.
 2. Type or paste `python -m venv venv` into the command prompt window and then hit the enter key. This will create a python virtual environment in the project directory.
 3. Type or paste `.\venv\Scripts\activate` into the command prompt window, and then hit the enter key. This will activate the virtual environment you just created.
 4. Type or paste `pip install -r requirements.txt` into the command prompt window, and then hit the enter key. This will install the python modules required for the project.
@@ -44,7 +44,7 @@ Once all of the workbooks have been completed by evaluators, this part of the to
 2. Open a command prompt instance inside the project directory where this readme file is located. 
 3. Type or paste `python aggregate.py` into the command prompt window, and then hit the enter key. This will open the user interface.
 4. Use the file browser to select the correct input folder, where all of the evaluator workbooks are saved.
-5. Clcik Run.
+5. Click Run.
 6. Wait a few moments while the data is aggregated.
 
 The program will notify you when the aggregation process is complete and inform you where the outputs of the aggregation process are.
