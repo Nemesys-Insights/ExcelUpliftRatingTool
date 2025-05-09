@@ -5,10 +5,9 @@
 - Windows
 - Internet connection (required for first time setup).
 - Python 3.13+
-- Permissions to run scripts (for quick start option)
 - A BBG benchmark dataset, complete with responses from the model to be benchmarked.
 - Known number of evaluators to evaluate the responses
-
+- Basic knowledge of python and command line interfaces.
 
  
 # Installation and Use
